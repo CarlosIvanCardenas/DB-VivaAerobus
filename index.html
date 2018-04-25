@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+        <script type="text/javascript" src="mysql.js"></script>
+        <title>VivaAerobus</title>
+    </head>
+    <body>
+        <div class="container">
+                <img src="logo.png" alt="VivaAerobus" style="width:500px;height:100px;">
+        </div>
+        <div class="container">
+            <h3>Ingrese los datos de su vuelo:</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="Origen">Origen:</label>
+                    <select class="form-control" id="Origen"></select> 
+                    <script type="text/javascript">
+                        getAeropuertos(Origen);   
+                    </script>
+                </div>
+                <div class="col-sm">
+                    <label for="Destino" >Destino:</label>
+                    <select class="form-control" id="Destino"></select> 
+                    <script type="text/javascript">
+                        getAeropuertos(Destino);   
+                    </script>
+                </div>
+                <div class="col-sm">
+                    <label for="fSalida">Fecha de salida:</label>
+                    <br>
+                    <input id="fSalida" type="date" value="2018-01-01">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <button class="btn btn-success" type="button" onclick="getVuelos()">Buscar Vuelos</button>
+            </div>
+        </div>
+        <br>
+    </body>
+  </html>

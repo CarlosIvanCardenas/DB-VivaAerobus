@@ -1,0 +1,32 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #73AD21;
+}
+
+h4 {
+    margin-right: 20px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.drop {
+    flex-grow: 0;
+    flex-basis: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container {
+    margin-bottom: 40px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
